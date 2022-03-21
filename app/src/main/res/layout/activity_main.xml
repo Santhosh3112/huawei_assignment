@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingTop="125dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/signupbackground"
+    android:paddingRight="10dp"
+    android:layout_height="match_parent"
+    tools:context=".Firstactivity">
+
+
+    <LinearLayout
+        android:id="@+id/lin_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signupchild"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15sp"
+            android:text="Sign-up Here"
+            android:textAlignment="center"
+            android:textColor="#A16ECD"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit"
+            android:hint="@string/name"
+            android:digits="abcdefghijklmnopqrstuvwxyz"
+            android:inputType="text"
+            android:textColorHint="#504C4C"
+            android:imeOptions="actionNext"
+            android:maxLength="20"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edit"
+            android:hint="@string/age"
+            android:textColorHint="#504C4C"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/Bio"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColorHint="#504C4C"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit"
+            android:hint="@string/bio"
+            android:imeOptions="actionNext"
+            android:maxLength="50"
+            android:inputType="text"
+            android:padding="10dp"
+             />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit"
+            android:hint="Location"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="30"
+            android:textColorHint="#504C4C"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#322F2F"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="fill_parent"
+                android:textColor="#322F2F"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Female"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/but_signup"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_back"
+            android:text="@string/log_in"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:onClick="onclickbuttonMethod"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+</LinearLayout>

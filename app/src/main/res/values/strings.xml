@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="age">Age</string>
+    <string name="name">Name</string>
+    <string name="bio">Bio</string>
+    <string name="log_in">Log-in</string>
+    <string name="location">Location :</string>
+    <string name="biodata">Bio :</string>
+    <string name="agedata">Age :</string>
+    <string name="namedata">Name :</string>
+</resources>
